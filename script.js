@@ -1,1 +1,1 @@
-ECHO is on.
+// alert("hello js file")
