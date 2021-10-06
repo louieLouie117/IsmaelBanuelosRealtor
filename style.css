@@ -1,9 +1,23 @@
 body{
     display: grid;
-    background: whitesmoke;
+    background: #60558C;
     margin: 0 auto;
     max-width: 30em;
     font: 1em sans-serif;
+}
+
+
+@media screen and (min-width: 540px) {
+    body{
+        max-width: none;
+    }
+    
+}
+@media screen and (min-width: 740px) {
+    body{
+        padding-top: 30px;
+    }
+    
 }
 
 
@@ -23,42 +37,52 @@ ul{
 
 .landingPage-Header{
     display: grid;
-    background: red;
     overflow: hidden;
-
 }
 
-.landingPage-Header img{
-    width: auto;
-    height: 280px;
+
+@media screen and (min-width: 740px) {
+    .landingPage-Header{
+        justify-content: center;
+    }
+
+    .landingPage-Header header picture img{
+        width: 100%;
+        height: 400px;
+    }
+    
+}
+
+.landingPage-Header header{
     grid-column: 1/2;
     grid-row: 1/2;
+
 }
 
-.landingPage-Header img:first-of-type{
+
+.landingPage-Header header picture img{
     width: 100%;
 }
 
-.landingPage-Header img:last-of-type {
-    justify-self: right;
-    margin-right: -15px;
+
+.landingPage-Header main{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    grid-template-columns: 130px 1fr;
+    align-content: center;
+
+
 }
 
-.landingPage-Header aside :first-child{
-    align-self: flex-end;
-}
 
-.landingPage-Header aside :last-child{
-    align-self: flex-start;
-    margin-top: -10px;
-}
 
-.landingPage-Header aside{
+.landingPage-Header main aside{
     display: grid;
     grid-column: 1/2;
     grid-row: 1/2;
     height: auto;
-    max-width: 200px;
+    width: 200px;
     align-self: center;
     padding: 0 10px;
     margin-top: 20px;
@@ -66,16 +90,108 @@ ul{
     font: .9em sans-serif;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
+    /* padding-left: 45px; */
+}
+
+
+
+@media screen and (min-width: 740px){
+
+    .landingPage-Header{
+        justify-content: center;
+    }
+    
+
+    .landingPage-Header header picture {
+        filter: blur(3px);
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    
+
+
+    .landingPage-Header main{
+        justify-self: center;
+        /* margin-bottom: -50px; */
+        grid-template-columns: 250px 1fr;
+
+    }
+  
+
+    .landingPage-Header main aside{
+        padding-left:  none;
+        width: 300px;
+        font-size: 1.3em;
+        padding-left: 0;
+
+    
+    }
+
+    
+
+}
+
+@media screen and (min-width: 540px) and (max-width: 740px) {
+
+    .landingPage-Header main{
+        grid-template-columns: 200px 1fr;
+        margin-bottom: -70px;
+
+    }
+
+    .landingPage-Header main aside{
+        margin-top: -50px;
+        padding-left: 30px;
+    }
+
+}
+
+@media screen and (min-width: 740px) {
+
+    .landingPage-Header main{
+        margin-bottom: -30px;
+
+    }
+}
+
+
+.landingPage-Header main aside :first-child{
+    align-self: flex-end;
+}
+
+.landingPage-Header main aside :last-child{
+    align-self: flex-start;
+    margin-top: -10px;
 }
 
 .landingPage-Main{
     display: grid;
-    margin-top: -25px;
     background: white;
     border-radius: 20px 20px 0 0;
     padding: 0 40px;
     row-gap: 15px;
     padding-bottom: 20px;
+    max-width: 30em;
+    margin: -30px auto 0;
+
+    
+}
+
+@media screen and (min-width: 740px) {
+    .landingPage-Main{
+        border-radius: 20px;
+        margin: 0 auto ;
+
+    }
+
+    .landingPage-Main section{
+        max-width: 30em; 
+        padding: 0 70px;
+    }
+    
 }
 
 .landingPage-Main header{
@@ -83,6 +199,7 @@ ul{
     justify-items: center;
     margin-top: -30px;
     row-gap: 5px;
+    
 }
 .landingPage-Main header h1{
     font-size: 1.7em;
@@ -102,16 +219,17 @@ ul{
 }
 
 
-
-
 .landingPage-Footer{
     display: grid;
     align-content: flex-start;
-    row-gap: 10px;
+    row-gap: 30px;
     background: #60558C;
     padding: 20px 40px;
     color: white;
     height: 180px;
+    /* max-width: 20em; */
+    margin: 0 auto ;
+    justify-items: center;
 }
 
 .landingPage-Footer p{
@@ -123,6 +241,7 @@ ul{
 .landingPage-Footer aside{
     display: grid;
     grid-template-columns: 1fr 100px;
+    width: 300px;
 }
 .landingPage-Footer aside button{
     background: none;
