@@ -1,6 +1,6 @@
 body{
     display: grid;
-    background: #60558C;
+    background: black;
     margin: 0 auto;
     max-width: 30em;
     font: 1em sans-serif;
@@ -224,8 +224,8 @@ ul{
 
 
 .landingPage-Main section:last-of-type p{
-    font: 1.5em sans-serif;
-    color: #60558C;
+    font: 1.2em sans-serif;
+    color: black;
 }
 
 
@@ -233,7 +233,6 @@ ul{
     display: grid;
     align-content: flex-start;
     row-gap: 30px;
-    background: #60558C;
     padding: 20px 40px;
     color: white;
     height: 180px;
