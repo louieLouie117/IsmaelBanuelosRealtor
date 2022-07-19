@@ -264,11 +264,16 @@ ul{
 
 .Review-Container{
     display: grid;
-    width: 100vw;
+    /* width: 100vw; */
     padding: 50px 20px;
     row-gap: 10px;
     background-color: #b0686e;
     margin: 20px 0;
+}
+
+.Review-Container ul::-webkit-scrollbar{
+    display: none;
+
 }
 
 .Review-Container h1{
@@ -279,7 +284,7 @@ ul{
 
 .Review-Container ul {
     display: flex;
-    width: 100vw;
+    width: 90vw;
     column-gap: 10px;
     overflow: scroll;
 
