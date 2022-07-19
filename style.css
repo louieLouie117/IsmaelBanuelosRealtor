@@ -90,6 +90,7 @@ ul{
     font: .9em sans-serif;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     justify-content: center;
+    row-gap: 5px;
     /* padding-left: 45px; */
 }
 
