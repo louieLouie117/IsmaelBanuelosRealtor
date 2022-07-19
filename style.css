@@ -262,6 +262,68 @@ ul{
     
 }
 
+.Review-Container{
+    display: grid;
+    width: 100vw;
+    padding: 50px 20px;
+    row-gap: 10px;
+    background-color: #b0686e;
+    margin: 20px 0;
+}
+
+.Review-Container h1{
+    font: 2em sans-serif;
+    color: white;
+}
+
+
+.Review-Container ul {
+    display: flex;
+    width: 100vw;
+    column-gap: 10px;
+    overflow: scroll;
+
+}
+
+.Review-Container ul section{
+    display: grid;
+    height: 200px;
+    background: white;
+    display: grid;
+    padding: 20px;
+}
+
+.Review-Container ul section button{
+    font: 1em sans-serif;
+    padding: 10px;
+    width: 150px;
+    height: 40px;
+    background-color: #A13D46;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.562)
+}
+
+
+.Review-Container ul li{
+    display: grid;
+    min-width: 250px;
+    max-width: 250px;
+    background: white;
+    overflow: hidden;
+    /* padding: 30px; */
+    align-content: flex-start;
+    row-gap: 10px;
+}
+
+
+
+
+/* .Review-Container ul li button{
+    position: absolute;
+    
+} */
+
 
 
 
