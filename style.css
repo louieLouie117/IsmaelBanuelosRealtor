@@ -324,6 +324,16 @@ ul{
 
 
 
+.Videos-Container{
+    display: grid;
+    justify-content: center;
+}
+
+.Videos-Container>video{
+    border-radius: 10px;
+    background-color: black;
+}
+
 
 /* .Review-Container ul li button{
     position: absolute;
