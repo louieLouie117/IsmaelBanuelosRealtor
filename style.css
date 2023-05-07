@@ -6,6 +6,12 @@ body{
     font: 1em sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 @media screen and (min-width: 540px) {
     body{
@@ -30,10 +36,81 @@ button{
     border: none;
 }
 
-ul{
+ul, ol{
+    display: grid;
+    row-gap: 5px;
     margin: 0;
     padding: 0;
 }
+
+.tipsContainer{
+    display: grid;
+    row-gap: 20px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.301);
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+
+.tipsContainer>a{
+    font: .8em sans-serif;
+}
+
+
+
+.tipsContainer>ol{
+    border-radius: 5px;
+    display: grid;
+    row-gap: 20px;
+    padding: 10px 30px ;
+
+}
+
+.tipsContainer>ol>li>h3{
+    font: 1.1em sans-serif;
+}
+
+
+
+
+.tipsContainer>footer{
+    display: grid;
+    background-color: #a13d45;
+    border-radius: 5px;
+    color: white;
+    display: grid;
+    padding: 10px;
+
+}
+
+
+.tipsContainer>footer>p{
+    color: white;
+
+}
+.tipsContainer>footer>a{
+    display: flex;
+    column-gap: 10px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+
+.tipsContainer>footer>a>img{
+    height: 30px;
+}
+
+
+.tipsContainer>footer>a>h3{
+    color: white;
+    font: 1.2em sans-serif;
+}
+
+
+
 
 .landingPage-Header{
     display: grid;
@@ -163,6 +240,7 @@ ul{
     padding-bottom: 20px;
     max-width: 30em;
     margin: -30px auto 0;
+    padding-bottom: 70px;
 
     
 }
@@ -198,9 +276,13 @@ ul{
 
     }
 
-    .landingPage-Main section{
+    .landingPage-Main>section{
         max-width: 30em; 
         padding: 0 70px;
+    }
+
+    .tipsContainer{
+        box-shadow: none;
     }
     
 }
@@ -226,7 +308,7 @@ ul{
 
 .landingPage-Main section:last-of-type p{
     font: 1.2em sans-serif;
-    color: black;
+    /* color: black; */
 }
 
 
@@ -252,7 +334,6 @@ ul{
 .landingPage-Footer aside{
     display: grid;
     grid-template-columns: 1fr 100px;
-    width: 300px;
 }
 .landingPage-Footer aside button{
     background: none;
@@ -327,12 +408,42 @@ ul{
 .Videos-Container{
     display: grid;
     justify-content: center;
+    padding-top: 30px;
 }
 
 .Videos-Container>video{
     border-radius: 10px;
     background-color: black;
 }
+
+
+.arrowContainer{
+    display: grid;
+    row-gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.arrowContainer>div>a{
+    background-color: #A13D46;
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    justify-content: center;
+    height: 25px;
+    padding: 10px;
+    border-radius: 7px;
+    text-decoration: none;  
+
+}
+
+
+.arrowContainer>div>a>button{
+    background: none;
+    color: white;
+    font: 1em sans-serif;
+}
+
+
 
 
 /* .Review-Container ul li button{
