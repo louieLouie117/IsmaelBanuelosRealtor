@@ -235,7 +235,7 @@ ul, ol{
     display: grid;
     background: white;
     border-radius: 20px 20px 0 0;
-    padding: 0 40px;
+    padding: 0 10px;
     row-gap: 15px;
     padding-bottom: 20px;
     max-width: 30em;
@@ -318,7 +318,6 @@ ul, ol{
     row-gap: 30px;
     padding: 20px 40px;
     color: white;
-    height: 180px;
     /* max-width: 20em; */
     margin: 0 auto ;
     justify-items: center;
@@ -378,6 +377,7 @@ ul, ol{
     background: white;
     display: grid;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .Review-Container ul section button{
@@ -441,6 +441,21 @@ ul, ol{
     background: none;
     color: white;
     font: 1em sans-serif;
+}
+
+
+.Review-Container>ul>section>li>header{
+    display: grid;
+
+}
+
+.star-container{
+    display: flex;
+    column-gap: 5px;
+}
+
+.star-container>img{
+    height: 15px;
 }
 
 
