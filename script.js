@@ -15,6 +15,13 @@ const FullReviewHandler = (e)=>{
     }
     
 
-
-
 }
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    fetch('reviews.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('reviewsContent').innerHTML = html;
+        });
+});

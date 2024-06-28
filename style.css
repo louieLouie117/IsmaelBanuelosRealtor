@@ -373,7 +373,7 @@ ul, ol{
 
 .Review-Container ul section{
     display: grid;
-    height: 200px;
+    height: fit-content;
     background: white;
     display: grid;
     padding: 20px;
