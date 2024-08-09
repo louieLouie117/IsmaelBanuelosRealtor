@@ -16,6 +16,14 @@ const FullReviewHandler = (e)=>{
     
 
 }
+document.addEventListener('DOMContentLoaded', () => {
+        fetch('videoContact.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('videoContact').innerHTML = html;
+        });
+});
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -24,10 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(html => {
             document.getElementById('reviewsContent').innerHTML = html;
         });
-        fetch('videoContact.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('videoContact').innerHTML = html;
-        });
+   
 });
 
