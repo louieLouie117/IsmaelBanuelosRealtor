@@ -24,4 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
         .then(html => {
             document.getElementById('reviewsContent').innerHTML = html;
         });
+        fetch('videoContact.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('videoContact').innerHTML = html;
+        });
 });
+

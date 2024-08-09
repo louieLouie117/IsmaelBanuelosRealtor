@@ -409,11 +409,14 @@ ul, ol{
     display: grid;
     justify-content: center;
     padding-top: 30px;
+    row-gap: 30px;
 }
 
 .Videos-Container>video{
     border-radius: 10px;
     background-color: black;
+    /* aspect-ratio for phones */
+
 }
 
 
