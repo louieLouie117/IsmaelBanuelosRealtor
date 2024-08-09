@@ -16,22 +16,18 @@ const FullReviewHandler = (e)=>{
     
 
 }
-document.addEventListener('DOMContentLoaded', () => {
-        fetch('videoContact.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('videoContact').innerHTML = html;
-        });
+
+
+document.addEventListener('DOMContentLoaded', async () => {
+    try {
+        const response1 = await fetch('videoContact.html');
+        const html1 = await response1.text();
+        document.getElementById('videoContact').innerHTML = html1;
+
+        const response2 = await fetch('reviews.html');
+        const html2 = await response2.text();
+        document.getElementById('reviewsContent').innerHTML = html2;
+    } catch (error) {
+        console.error('Error loading content:', error);
+    }
 });
-
-
-
-document.addEventListener('DOMContentLoaded', () => {
-    fetch('reviews.html')
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('reviewsContent').innerHTML = html;
-        });
-   
-});
-
