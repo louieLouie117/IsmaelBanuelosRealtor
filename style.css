@@ -365,9 +365,10 @@ ul, ol{
 
 .Review-Container ul {
     display: flex;
-    width: 90vw;
+    width: 97vw;
     column-gap: 10px;
     overflow: scroll;
+    height: 90vh;
 
 }
 
