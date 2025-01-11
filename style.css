@@ -285,6 +285,13 @@ ul, ol{
         box-shadow: none;
     }
     
+    .Videos-Container{
+        grid-template-columns: 1fr 1fr 1fr ;
+        justify-self: center;
+        column-gap: 20px;
+        
+    }
+    
 }
 
 .landingPage-Main header{
